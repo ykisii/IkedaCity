@@ -4,7 +4,7 @@ export class IKedaCity {
     return 0;
   }
 
-  public getCityNames(): any[] {
+  public getTownNames(): any[] {
     return [];
   }
 
