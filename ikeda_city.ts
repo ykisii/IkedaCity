@@ -1,7 +1,9 @@
 export class IKedaCity {
 
-  public getPopulation(): number {
-    return 0;
+  public getPopulation(): Promise<number> {
+    return new Promise(resolve => {
+      resolve(0);
+    });
   }
 
   public getTownNames(): any[] {
