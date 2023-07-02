@@ -6,7 +6,7 @@ export class IKedaCity {
     });
   }
 
-  public getTownNames(): any[] {
+  public getTownNames(): string[] {
     return [];
   }
 
