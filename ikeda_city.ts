@@ -13,4 +13,8 @@ export class IKedaCity {
   public getPopulationByTownName(name: string): number {
     return 0;
   }
+
+  public getBudget(year: number): number {
+    retunr 0;
+  }
 }
