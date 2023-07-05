@@ -23,3 +23,10 @@ Deno.test (
     assertEquals("", new IKedaCity().getPopulationByTownName(""));
   }
 );
+
+Deno.test (
+  "getBudget",
+  function(): void {
+    assertEquals(0, (new IKedaCity().getBudget(2001)));
+  }
+);
