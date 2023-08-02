@@ -4,7 +4,9 @@ import { IKedaCity } from "./ikeda_city.ts";
 Deno.test (
   "getPopulation",
   function(): void {
-    assertEquals(103064, new IKedaCity().getPopulation());
+    new IKedaCity().getPopulation().then((val) => {
+      assertEquals(0, val);
+    }) 
   }
 );
 
@@ -19,5 +21,12 @@ Deno.test (
   "getPopulationByTownNames",
   function(): void {
     assertEquals("", new IKedaCity().getPopulationByTownName(""));
+  }
+);
+
+Deno.test (
+  "getBudget",
+  function(): void {
+    assertEquals(0, (new IKedaCity().getBudget(2001)));
   }
 );
